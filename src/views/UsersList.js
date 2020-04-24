@@ -109,6 +109,10 @@ const UsersList = () => {
 
   // actions
   const onSelectCell = ({ email }) => {
+    if (selectedRow == email) {
+      setSelectedRow(null)
+      return;
+    }
     setSelectedRow(email)
   }
 
