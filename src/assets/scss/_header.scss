@@ -1,0 +1,16 @@
+.gb-header {
+  background-color: $white-darken-1 !important;
+  padding: 20px 0;
+  box-shadow: 0 3px 5px 3px rgba(0, 0, 0, .05) !important;
+}
+
+.gb-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: flex-end;
+}

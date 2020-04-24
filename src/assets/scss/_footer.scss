@@ -1,0 +1,29 @@
+@import 'colors'; 
+
+footer.main-footer {
+  background-color: $black-light-2;
+  display: flex;
+  align-items: center;
+  color: $white-darken-1;
+  position: relative;
+  div {
+    z-index: 2;
+  }
+
+  &:after {
+    z-index: 0;
+    content: '';
+    width: 80px;
+    height: 0;
+    position: absolute; 
+    left: 0;
+    top: 0;
+    border-bottom: 60px solid $black-light-1;
+    border-right: 30px solid transparent;
+  }
+}
+
+.on-ar {
+  color: orange;
+  margin-right: 60px;
+}

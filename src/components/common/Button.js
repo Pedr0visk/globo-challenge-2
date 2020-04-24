@@ -1,11 +1,14 @@
 import React from 'react'
-import '../../assets/scss/Buttons.scss';
 
-export default ({text, icon, classes}) => {
+const Button = ({ text, icon, ...props }) => {
   return (
-    <button className={classes}>
-      {text}
-      {icon}
+    <button {...props}>
+      <span className="btn-label">
+        <span className={(text && "btn-icon-left")}>{icon}</span>
+        {text}
+      </span>
     </button>
   )
 }
+
+export default Button;

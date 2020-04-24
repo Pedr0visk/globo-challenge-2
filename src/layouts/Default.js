@@ -1,13 +1,14 @@
 import React from "react";
 import MainNavbar from "../components/layout/MainNavbar";
-import '../assets/scss/App.scss';
+import Footer from '../components/layout/Footer';
 
-const DefaultLayout = () => (
+const DefaultLayout = ({ children }) => (
   <div className="wrap bg-white-1">
-    <MainNavbar/>
-    <div className="main">
-      <h1>Welcome</h1>
+    <MainNavbar />
+    <div className="main-content">
+      {children}  
     </div>
+    <Footer />
   </div>
 );
 
